@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+
+    <!-- Link Bootstrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <hr>
+        <h3>About You</h3>
+        <h4>Name*</h4>
+        <input type="text" id="name" class="form-group" required="">
+        <h4>Link to Photo Image*</h4>
+        <input type="text" id="photo" class="form-group" required="">
+        <p>* indicates fields that need to be populated</p>
+        <hr>
+
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q1">You believe breakfast is the most important meal of the day.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q1">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q2">You drink a healthy amount of water per day.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q2">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q3">You think you are the funniest person you know.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q3">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q4">You like to do work/complete tasks with headphones in and music playing.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q4">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q5">On any random day, you prefer coffee over tea.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q5">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q6">During idle time, you enjoy playing [video] games.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q6">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q7">You think guac should be free.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q7">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q8">Assuming you are in the market, you would rather find a date on an app than in
+                person.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q8">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q9">You enjoy art and frequently attend galleries, openings, shows, and events.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q9">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+        <div class="form-group">
+            <label for="q10">You wish that you read more.</label>
+            <select class="custom-select my-1 mr-sm-2" id="q10">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit
+        </button>
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a>
+                    |
+                    <a href="https://github.com/asamrodcky/FriendFinder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="https://via.placeholder.com/400x400"
+                        alt="Placeholder image in case user pic doesn't show">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $("#submit").on("click", function () {
+            event.preventDefault();
+            var newFriend = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val(),
+                ]
+            }
+            // console.log(newFriend)
+
+            const currentURL = window.location.origin;
+
+            $.post(currentURL + "/api/friends", newFriend, function (data) {
+                console.log(data.name);
+                $("matchName").text(data.name);
+                $("matchImg").attr("src", data.photo);
+                $("#resultsModal").modal("toggle");
+                
+                alert("Your best friend is: " + data.name)
+            });
+        })
+    </script>
+</body>
+
+</html>
